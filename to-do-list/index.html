@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Year to do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+        <div class="day">
+            <span class="value">365</span>
+            <span class="text">Day</span>
+        </div>
+        <div class="hour">
+            <span class="value">24</span>
+            <span class="text">Hour</span>
+        </div>
+        <div class="minute">
+            <span class="value">59</span>
+            <span class="text">Minute</span>
+        </div>
+        <div class="second">
+            <span class="value">15</span>
+            <span class="text">Second</span>
+        </div>
+    </div>
+<!--  -->
+        <div id="form1" class="header">
+      <header>✶New Task✶</header>
+      <hr />
+
+      <div class="addBtn">
+        <input type="text" id="myInput" placeholder="Type a new task..." />
+        <span onclick="newElement()" class="addBtn" id="btnAddNewTask" href='#' >
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#d77fa1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <line x1="9" y1="12" x2="15" y2="12" />
+                <line x1="12" y1="9" x2="12" y2="15" />
+              </svg>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="9" y1="12" x2="15" y2="12" />
+            <line x1="12" y1="9" x2="12" y2="15" />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <br />
+<!--  -->
+    <div id="form2">
+     <header class="text2" >     
+       ✶Task List✶
+        
+        <a
+            id="btnDeleteAll"
+            href="#"
+            class="btn btn-outline-danger btn-sm delete-all float-right"
+          >
+            Delete All
+          </a>
+      
+      </header>
+
+      <ul id="myUL" href="#"  class="list-group">
+        <li>Tezhip yapmaya devam edilecek
+          <a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+        </li>
+        <li>Faturalar ödenecek</li>
+        <li>Sabahları yürüyüş yapılacak</li>
+        <li>Front-end öğrenilecek</li>
+        <li>Her ay 2 kitap okunacak</li>
+        <li>Sağlıklı beslenilecek</li>
+      </ul>
+    </div>
+<!--  -->
+
+    <footer>
+        <p>2022 © Tüm hakları saklıdır | H.Şuheda AYTEKİN </p>
+      </footer>
+      <script src="script.js"></script>
+
+  </body>
+</html>
